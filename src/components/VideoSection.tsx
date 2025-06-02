@@ -17,11 +17,14 @@ const VideoSection = () => {
                   <Play size={24} className="text-black ml-1" />
                 </div>
               </button>
+              <div className="absolute bottom-0 left-0 p-6">
+                <h2 className="text-white text-2xl font-semibold">Societal Impacts of AI</h2>
+              </div>
             </div>
           </div>
           <div className="u-column-4 u-align-self-center">
             <div className="u-vflex-stretch-top">
-              <p className="text-6xl font-light mb-6">"</p>
+              <p className="quote-mark">"</p>
               <p className="u-paragraph-l u-mb-gutter">
                 If knowledge is power and we're building machines that have more knowledge than us, what will happen between us and the machines?
               </p>

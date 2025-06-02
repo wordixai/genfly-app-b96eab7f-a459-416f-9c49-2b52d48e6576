@@ -1,32 +1,9 @@
-import { ArrowRight } from "lucide-react";
-
 const AboutSection = () => {
-  const cards = [
-    {
-      title: "Core Views on AI Safety",
-      bgColor: "u-bg-oat",
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=400&h=300&fit=crop",
-      link: "#"
-    },
-    {
-      title: "Anthropic's Responsible Scaling Policy",
-      bgColor: "u-bg-cactus",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop",
-      link: "#"
-    },
-    {
-      title: "Anthropic Academy: Learn to build with Claude",
-      bgColor: "u-bg-heather",
-      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop",
-      link: "#"
-    }
-  ];
-
   return (
     <section className="py-16">
       <div className="u-container">
         <div className="u-vflex-stretch-top u-gap-xl">
-          <div className="w-full h-px bg-border"></div>
+          <div className="divider-inner"></div>
           
           <div className="u-grid-desktop">
             <div className="u-column-4">
@@ -48,22 +25,50 @@ const AboutSection = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {cards.map((card, index) => (
-              <a key={index} href={card.link} className="group block">
-                <div className={`${card.bgColor} rounded-lg p-6 h-80 flex flex-col transition-transform group-hover:scale-105`}>
-                  <div className="u-width-full u-max-width-16ch u-ratio-1-1 u-align-self-center mb-6">
-                    <img 
-                      src={card.image} 
-                      alt={card.title}
-                      className="w-full h-full object-cover rounded-md"
-                    />
-                  </div>
-                  <div className="flex-1 flex flex-col justify-end">
-                    <h3 className="u-display-s text-black">{card.title}</h3>
-                  </div>
+            <a href="#" className="block">
+              <div className="launch-hero-card u-bg-oat">
+                <div className="u-width-full u-max-width-16ch u-ratio-1-1 u-align-self-center mb-6">
+                  <img 
+                    src="https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/67ed7bd686b6d20bb1cd568c_Hands-Build.svg" 
+                    alt="Core Views on AI Safety"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-              </a>
-            ))}
+                <div className="flex-1 flex flex-col justify-end">
+                  <h3 className="u-display-s text-black">Core Views on AI Safety</h3>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" className="block">
+              <div className="launch-hero-card u-bg-cactus">
+                <div className="u-width-full u-max-width-16ch u-ratio-1-1 u-align-self-center mb-6">
+                  <img 
+                    src="https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/67ed7bd72914c76f710d86fc_Hands-Stack.svg" 
+                    alt="Anthropic's Responsible Scaling Policy"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="flex-1 flex flex-col justify-end">
+                  <h3 className="u-display-s text-black">Anthropic's Responsible Scaling Policy</h3>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" className="block">
+              <div className="launch-hero-card u-bg-heather">
+                <div className="u-width-full u-max-width-16ch u-ratio-1-1 u-align-self-center mb-6">
+                  <img 
+                    src="https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/67ed7b8d86b6d20bb1cd1292_Objects-Puzzle.svg" 
+                    alt="Anthropic Academy"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="flex-1 flex flex-col justify-end">
+                  <h3 className="u-display-s text-black">Anthropic Academy:<br/>Learn to build with Claude</h3>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>

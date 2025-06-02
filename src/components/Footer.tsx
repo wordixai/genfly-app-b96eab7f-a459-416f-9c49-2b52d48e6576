@@ -5,10 +5,11 @@ const Footer = () => {
       links: [
         "Claude overview",
         "Claude Pro",
-        "Claude Team",
+        "Claude Team plan",
         "Claude Enterprise",
         "Claude for iOS",
         "Claude for Android",
+        "Download Claude",
         "Claude in Slack",
         "Claude at work"
       ]
@@ -25,13 +26,14 @@ const Footer = () => {
       ]
     },
     {
-      title: "Conversations",
+      title: "Commitments",
       links: [
         "Transparency",
-        "Constitutional AI policy",
+        "Responsible scaling policy",
         "Security and compliance",
-        "AI agents",
-        "Customer support"
+        "Solutions",
+        "AI agenda",
+        "Coding"
       ]
     },
     {
@@ -40,7 +42,8 @@ const Footer = () => {
         "Anthropic Academy",
         "Customer stories",
         "Engineering at Anthropic",
-        "Claude Experts",
+        "Claude Courses",
+        "About us",
         "Become a partner",
         "Careers",
         "News",
@@ -51,13 +54,13 @@ const Footer = () => {
       title: "Help and security",
       links: [
         "Status",
-        "Support",
-        "Terms of Service",
-        "Privacy Policy",
-        "Usage Policies",
+        "Support center",
+        "Terms and policies",
+        "Privacy policy",
         "Responsible disclosure policy",
         "Terms of service - consumer",
-        "Terms of service - commercial"
+        "Terms of service - commercial",
+        "Usage policy"
       ]
     }
   ];

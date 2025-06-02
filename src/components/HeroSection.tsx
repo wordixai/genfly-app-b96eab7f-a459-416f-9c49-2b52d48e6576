@@ -1,60 +1,8 @@
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
-  const cards = [
-    {
-      title: "Claude 4",
-      bgColor: "u-bg-clay",
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop",
-      summary: "Introducing the next generation of Claude models: Opus 4 and Sonnet 4",
-      link: "#"
-    },
-    {
-      title: "API capabilities",
-      bgColor: "u-bg-oat",
-      image: "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=400&h=300&fit=crop",
-      summary: "Four new capabilities to help developers build AI agents",
-      link: "#"
-    },
-    {
-      title: "Claude Code",
-      bgColor: "u-bg-coral",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
-      summary: "Two powerful AI products — Claude Code and Claude apps, included in the Max plan",
-      link: "#"
-    },
-    {
-      title: "Research",
-      bgColor: "u-bg-clay",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
-      summary: "Gather comprehensive insights from hundreds of sources, in minutes",
-      link: "#"
-    },
-    {
-      title: "Integrations",
-      bgColor: "u-bg-oat",
-      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=300&fit=crop",
-      summary: "Integrate Claude with external tools and apps for expert assistance",
-      link: "#"
-    },
-    {
-      title: "Google Workspace",
-      bgColor: "u-bg-coral",
-      image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=400&h=300&fit=crop",
-      summary: "Connect your Gmail, Calendar, and Docs for deeper insights",
-      link: "#"
-    },
-    {
-      title: "Web search",
-      bgColor: "u-bg-clay",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&h=300&fit=crop",
-      summary: "Search the internet for more up-to-date and relevant responses",
-      link: "#"
-    }
-  ];
-
   return (
-    <section className="py-16">
+    <section className="py-16 bg-background">
       <div className="u-container">
         {/* Hero Header */}
         <div className="text-center mb-16">
@@ -64,36 +12,91 @@ const HeroSection = () => {
 
         {/* Explore Section */}
         <div className="flex items-center justify-center mb-12">
-          <div className="flex items-center gap-4 text-center">
+          <div className="launch-hero-explore">
             <p className="u-detail-m">Explore the latest updates</p>
-            <ArrowRight size={24} />
+            <div className="launch-hero-explore-icon">
+              <ArrowRight size={24} />
+            </div>
           </div>
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16">
-          {cards.map((card, index) => (
-            <a key={index} href={card.link} className="group block">
-              <div className={`${card.bgColor} rounded-lg p-6 h-80 flex flex-col transition-transform group-hover:scale-105`}>
-                <h3 className="u-font-display-serif u-display-m u-alignment-center mb-6 text-black">
-                  {card.title}
-                </h3>
-                <div className="flex-1 flex flex-col justify-between">
-                  <div className="mb-4">
-                    <img 
-                      src={card.image} 
-                      alt={card.title}
-                      className="w-full h-32 object-cover rounded-md"
-                    />
-                  </div>
-                  <div>
-                    <p className="u-paragraph-m text-black mb-4">{card.summary}</p>
-                    <p className="u-detail-m text-black">Read the announcement</p>
-                  </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-16 overflow-x-auto">
+          <a href="#" className="block">
+            <div className="launch-hero-card u-bg-clay">
+              <p className="u-font-display-serif u-display-m u-alignment-center mb-6">Claude 4</p>
+              <div className="launch-hero-card-info">
+                <div className="mb-4">
+                  <img 
+                    src="https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/682f42763b573855adea47ef_Claude-4-hero.svg" 
+                    alt="Claude 4"
+                    className="w-full h-32 object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="u-paragraph-m text-black mb-4">Introducing the next generation of Claude models: Opus 4 and Sonnet 4</p>
+                  <p className="launch-hero-read-more">Read the announcement</p>
                 </div>
               </div>
-            </a>
-          ))}
+            </div>
+          </a>
+
+          <a href="#" className="block">
+            <div className="launch-hero-card u-bg-oat">
+              <p className="u-font-display-serif u-display-m u-alignment-center mb-6">API capabilities</p>
+              <div className="launch-hero-card-info">
+                <div className="mb-4">
+                  <img 
+                    src="https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/682e9ec60f57e3bb319199f4_Property%201%3DVariant2.svg" 
+                    alt="API capabilities"
+                    className="w-full h-32 object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="u-paragraph-m text-black mb-4">Four new capabilities to help developers build AI agents</p>
+                  <p className="launch-hero-read-more">Read the announcement</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" className="block">
+            <div className="launch-hero-card u-bg-coral">
+              <p className="u-font-display-serif u-display-m u-alignment-center mb-6">Claude<br/>Code</p>
+              <div className="launch-hero-card-info">
+                <div className="mb-4">
+                  <img 
+                    src="https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/67ed7bd7ed0a04645bd3c2fd_Hands-Type.svg" 
+                    alt="Claude Code"
+                    className="w-full h-32 object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="u-paragraph-m text-black mb-4">Two powerful AI products — Claude Code and Claude apps, included in the Max plan</p>
+                  <p className="launch-hero-read-more">Learn more</p>
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" className="block">
+            <div className="launch-hero-card u-bg-clay">
+              <p className="u-font-display-serif u-display-m u-alignment-center mb-6">Research</p>
+              <div className="launch-hero-card-info">
+                <div className="mb-4">
+                  <img 
+                    src="https://cdn.prod.website-files.com/67ce28cfec624e2b733f8a52/67d2158c590b5c5fb0248eb5_Hands-Tree.svg" 
+                    alt="Research"
+                    className="w-full h-32 object-contain"
+                  />
+                </div>
+                <div>
+                  <p className="u-paragraph-m text-black mb-4">Gather comprehensive insights from hundreds of sources, in minutes</p>
+                  <p className="launch-hero-read-more">Read the announcement</p>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
 
         {/* Bottom CTA */}

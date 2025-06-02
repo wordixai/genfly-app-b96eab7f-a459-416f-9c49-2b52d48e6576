@@ -8,12 +8,12 @@ const CTASection = () => {
           </h2>
           
           <div className="u-btn-group">
-            <button className="bg-primary text-primary-foreground px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition-colors">
+            <a href="#" className="bg-primary text-primary-foreground px-6 py-3 rounded-md font-medium hover:bg-primary/90 transition-colors inline-block">
               See open roles
-            </button>
-            <button className="border border-primary text-primary px-6 py-3 rounded-md font-medium hover:bg-primary/5 transition-colors">
+            </a>
+            <a href="#" className="border border-primary text-primary px-6 py-3 rounded-md font-medium hover:bg-primary/5 transition-colors inline-block">
               Speak with sales
-            </button>
+            </a>
           </div>
         </div>
       </div>

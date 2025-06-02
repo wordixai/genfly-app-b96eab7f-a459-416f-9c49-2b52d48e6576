@@ -43,11 +43,11 @@ const FeaturedSection = () => {
           <div className="u-column-8">
             <ul className="space-y-6">
               {articles.map((article, index) => (
-                <li key={index}>
+                <li key={index} role="region">
                   <a href={article.link} className="block group">
-                    <div className="u-detail-m">
+                    <div className="u-detail-m border-b border-border pb-4">
                       <div className="u-width-full mb-2">
-                        <h3 className="u-weight-medium group-hover:text-primary/80 transition-colors">
+                        <h3 className="u-weight-medium text-lg group-hover:text-primary/80 transition-colors">
                           {article.title}
                         </h3>
                       </div>

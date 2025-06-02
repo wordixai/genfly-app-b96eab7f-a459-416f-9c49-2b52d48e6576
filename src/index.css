@@ -35,11 +35,11 @@
     --radius: 0.5rem;
 
     /* Anthropic brand colors */
-    --clay: 206 169 145;
-    --oat: 235 225 207;
-    --coral: 235 147 122;
-    --cactus: 168 196 178;
-    --heather: 186 178 201;
+    --clay: 16 41% 69%;
+    --oat: 39 38% 87%;
+    --coral: 11 70% 70%;
+    --cactus: 144 19% 71%;
+    --heather: 261 15% 74%;
   }
 
   .dark {
@@ -86,23 +86,23 @@
 
 /* Custom utility classes */
 .u-bg-clay {
-  background-color: rgb(206 169 145);
+  background-color: hsl(var(--clay));
 }
 
 .u-bg-oat {
-  background-color: rgb(235 225 207);
+  background-color: hsl(var(--oat));
 }
 
 .u-bg-coral {
-  background-color: rgb(235 147 122);
+  background-color: hsl(var(--coral));
 }
 
 .u-bg-cactus {
-  background-color: rgb(168 196 178);
+  background-color: hsl(var(--cactus));
 }
 
 .u-bg-heather {
-  background-color: rgb(186 178 201);
+  background-color: hsl(var(--heather));
 }
 
 .u-display-xxl {
@@ -346,6 +346,53 @@
 
 .u-theme-color-light {
   background-color: rgb(249 249 247);
+}
+
+.launch-hero-card {
+  border-radius: 0.75rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.launch-hero-card:hover {
+  transform: scale(1.02);
+}
+
+.launch-hero-card-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.launch-hero-read-more {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.launch-hero-explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.quote-mark {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 300;
+  margin-bottom: -2rem;
+}
+
+.divider-inner {
+  height: 1px;
+  background-color: hsl(var(--border));
+  width: 100%;
 }
 
 @media (max-width: 768px) {
